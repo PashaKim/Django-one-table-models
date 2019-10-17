@@ -4,12 +4,12 @@ import content.models as models
 
 @admin.register(models.NodeParrent)
 class NodeParrentAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name_parrent', 'name_a', 'name_b', 'name_c')
+    list_display = ('id', 'name_parrent', 'name_a',  'name_b', 'name_c')
 
 
 @admin.register(models.NodeA)
 class NodeAAdmin(admin.ModelAdmin):
-    list_display = ('id',  'name_a',)
+    list_display = ('id',  'name_a')
 
 
 @admin.register(models.NodeB)
@@ -19,7 +19,7 @@ class NodeBAdmin(admin.ModelAdmin):
 
 @admin.register(models.NodeC)
 class NodeCAdmin(admin.ModelAdmin):
-    list_display = ('id',  'name_c')
+    list_display = ('id',  'name_c',)
 
 
 @admin.register(models.NodeAB)
